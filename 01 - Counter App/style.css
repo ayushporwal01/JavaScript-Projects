@@ -15,5 +15,11 @@ body {
 }
 
 .wrapper {
-    
+    width: 500px;
+    height: 300px;
+    background-color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
