@@ -17,7 +17,6 @@ body {
 .wrapper {
     width: 500px;
     height: 400px;
-    background-color: #DEDEDE;
     display: flex;
     flex-direction: column;
     justify-content: center;
