@@ -5,5 +5,5 @@ let decrementBtn = document.getElementById('decrement-btn');
 let currValue = counter.value;
 
 incrementBtn.addEventListener('click', (e) => {
-    
+    currValue += 1;
 })
