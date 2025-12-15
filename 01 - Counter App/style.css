@@ -28,6 +28,12 @@ body {
     font-size: 3rem;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #counter {
     width: 80px;
     height: 80px;
@@ -35,6 +41,14 @@ body {
     text-align: center;
 }
 
-#increment-btn {
-    
+#increment-btn, #decrement-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50%;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
