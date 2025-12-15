@@ -7,3 +7,8 @@ let currValue = counter.value;
 incrementBtn.addEventListener('click', (e) => {
     currValue += 1;
 })
+
+incrementBtn.addEventListener('click', (e) => {
+    currValue += 1;
+})
+
