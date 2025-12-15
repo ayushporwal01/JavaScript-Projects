@@ -9,6 +9,6 @@ incrementBtn.addEventListener('click', (e) => {
 })
 
 decrementBtn.addEventListener('click', (e) => {
-    currValue += 1;
+    currValue -= 1;
 })
 
