@@ -8,7 +8,7 @@ incrementBtn.addEventListener('click', (e) => {
     currValue += 1;
 })
 
-incrementBtn.addEventListener('click', (e) => {
+decrementBtn.addEventListener('click', (e) => {
     currValue += 1;
 })
 
