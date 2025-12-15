@@ -16,10 +16,14 @@ body {
 
 .wrapper {
     width: 500px;
-    height: 300px;
+    height: 400px;
     background-color: #DEDEDE;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper > h1 {
+    font-size: 3rem;
 }
