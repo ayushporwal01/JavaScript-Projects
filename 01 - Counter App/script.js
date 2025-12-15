@@ -2,7 +2,7 @@ let counter = document.getElementById('counter');
 let incrementBtn = document.getElementById('increment-btn');
 let decrementBtn = document.getElementById('decrement-btn');
 
-let currValue = counterVal.value;
+let currValue = counter.value;
 
 incrementBtn.addEventListener('click', (e) => {
     currValue += 1;
