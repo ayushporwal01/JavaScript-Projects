@@ -17,6 +17,7 @@ body {
 .wrapper {
     width: 500px;
     height: 400px;
+    background-color: #DEDEDE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +26,7 @@ body {
 }
 
 .wrapper > h1 {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .controls {
@@ -47,12 +48,12 @@ body {
 }
 
 #increment-btn, #decrement-btn {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border: 1px solid black;
     outline: none;
     border-radius: 50%;
-    font-size: 3.5rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
