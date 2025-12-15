@@ -29,18 +29,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 38rem;
+    gap: 8rem;
     margin-bottom: 2rem;
 }
 
 #counter {
-    width: 80px;
+    width: 1000px;
     height: 80px;
     font-size: 5.5rem;
     text-align: center;
     background: transparent;
     border: none;
     outline: none;
+    background-color: red;
 }
 
 #increment-btn, #decrement-btn {
