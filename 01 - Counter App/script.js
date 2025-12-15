@@ -10,7 +10,7 @@ incrementBtn.addEventListener('click', (e) => {
 
 decrementBtn.addEventListener('click', (e) => {
     if(currValue > 0) {
-        currValue -= 1;
+       currValue -= 1;
     }
 })
 
