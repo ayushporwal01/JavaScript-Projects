@@ -6,13 +6,13 @@ let currValue = counter.value;
 
 incrementBtn.addEventListener('click', (e) => {
     currValue += 1;
-    counter.textContent = currValue;
+    counter.value = currValue;
 })
 
 decrementBtn.addEventListener('click', (e) => {
     if(currValue > 0) {
        currValue -= 1;
-       counter.textContent = currValue;
+       counter.value = currValue;
     }
 })
 
