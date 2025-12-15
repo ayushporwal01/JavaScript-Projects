@@ -41,7 +41,6 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    background-color: red;
 }
 
 #increment-btn, #decrement-btn {
