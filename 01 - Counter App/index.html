@@ -4,65 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter App</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-            user-select: none;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wrapper {
-            width: 1600px;
-            height: 400px;  
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;    
-        }
-
-        .controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8rem;
-            margin-bottom: 2rem;
-        }
-
-        #counter {
-            width: 1000px;
-            height: 80px;
-            font-size: 5.5rem;
-            text-align: center;
-            background: transparent;
-            border: none;
-            outline: none;
-        }
-
-        #increment-btn, #decrement-btn {
-            width: 80px;
-            height: 80px;
-            border: 1px solid black;
-            outline: none;
-            border-radius: 50%;
-            font-size: 5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -72,25 +14,6 @@
             <button id="increment-btn">+</button>
         </div>
     </div> 
-
-    <script>
-        let counter = document.getElementById('counter');
-        let incrementBtn = document.getElementById('increment-btn');
-        let decrementBtn = document.getElementById('decrement-btn');
-
-        let currValue = parseInt(counter.value);
-
-        incrementBtn.addEventListener('click', (e) => {
-            currValue += 1;
-            counter.value = currValue;
-        })
-
-        decrementBtn.addEventListener('click', (e) => {
-            if(currValue > 0) {
-            currValue -= 1;
-            counter.value = currValue;
-            }
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
