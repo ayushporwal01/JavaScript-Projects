@@ -21,7 +21,7 @@
 }
 
 .clock-container {
-    
+    display: flex;
 }
 
 .clock {
