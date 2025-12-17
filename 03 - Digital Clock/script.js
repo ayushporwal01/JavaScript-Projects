@@ -11,7 +11,7 @@ function updateClock() {
     let ampm = '';
     
     if(!is24HourFormat) {
-        
+        ampm = hrs >= 12 ? 'PM' : 'AM';
     }
 }
 
