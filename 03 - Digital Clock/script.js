@@ -26,6 +26,9 @@ function updateClock() {
     clock.textContent = timeString;
 
     // Toggle format on button click
+    formatBtn.addEventListener((e) => {
+        
+    })
 
     setInterval(updateClock, 1000);
 
