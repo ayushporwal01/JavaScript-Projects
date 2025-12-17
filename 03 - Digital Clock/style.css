@@ -21,3 +21,7 @@
 .clock {
     font-size: 8rem;
 }
+
+.format-btn {
+    text-transform: uppercase;
+}
