@@ -28,8 +28,12 @@ function updateClock() {
 
 // Toggle format on button click
 formatBtn.addEventListener('click', (e) => {
-   is24HourFormat = !is24HourFormat;
-   updateClock();
+    is24HourFormat = !is24HourFormat;
+
+    // Change the button text
+    formatBtn.textContent = is24HourFormat ? '12hr' : '24hr';
+
+    updateClock();
 })
 
 //Initialize clock
