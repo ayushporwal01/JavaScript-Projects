@@ -24,17 +24,15 @@ function updateClock() {
 
     //Display the time
     clock.textContent = timeString;
-
-    // Toggle format on button click
-    formatBtn.addEventListener('click', (e) => {
-       is24HourFormat = !is24HourFormat;
-       updateClock();
-    })
-
-    setInterval(updateClock, 1000);
-
-    //Initialize clock
-    updateClock();
-
 }
 
+// Toggle format on button click
+formatBtn.addEventListener('click', (e) => {
+   is24HourFormat = !is24HourFormat;
+   updateClock();
+})
+
+setInterval(updateClock, 1000);
+
+//Initialize clock
+updateClock();
