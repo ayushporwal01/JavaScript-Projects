@@ -23,6 +23,9 @@
 }
 
 #format-btn {
+    width: 80px;
+    height: 30px;
+    font-size: 1.1rem;
     text-transform: uppercase;
     cursor: pointer;
 }
