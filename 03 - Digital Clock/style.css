@@ -22,7 +22,7 @@
     font-size: 8rem;
 }
 
-.format-btn {
+#format-btn {
     text-transform: uppercase;
     cursor: pointer;
 }
