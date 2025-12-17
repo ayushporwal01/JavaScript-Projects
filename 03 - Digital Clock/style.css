@@ -24,4 +24,5 @@
 
 .format-btn {
     text-transform: uppercase;
+    cursor: pointer;
 }
