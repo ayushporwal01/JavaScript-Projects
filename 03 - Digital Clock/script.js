@@ -32,7 +32,8 @@ formatBtn.addEventListener('click', (e) => {
    updateClock();
 })
 
-setInterval(updateClock, 1000);
-
 //Initialize clock
 updateClock();
+
+setInterval(updateClock, 1000);
+
