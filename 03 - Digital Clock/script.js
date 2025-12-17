@@ -17,8 +17,8 @@ function updateClock() {
         hrs = hrs ? hrs : 12;
     }
 
-    mins < 10 ? "0" + mins : mins;
-    secs < 10 ? "0" + secs : secs;
+    mins = mins < 10 ? "0" + mins : mins;
+    secs = secs < 10 ? "0" + secs : secs;
 
     let timeString = `${hrs}:${mins}:${secs}${ampm}`;
 
