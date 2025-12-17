@@ -20,11 +20,6 @@
     /* position: relative; */
 }
 
-.clock-container {
-    display: flex;
-    gap: 10px;
-}
-
 .clock {
     font-size: 8rem;
 }
