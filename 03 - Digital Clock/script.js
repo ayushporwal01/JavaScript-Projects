@@ -21,5 +21,8 @@ function updateClock() {
 
     let timeString = `${hrs}:${mins}:${secs}${ampm}`;
 
+    //Display the time
+    clock.textContent = timeString;
+
 }
 
