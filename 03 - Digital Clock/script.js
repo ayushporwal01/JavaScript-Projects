@@ -7,5 +7,6 @@ function updateClock() {
     let date = new Date();
     let hrs = date.getHours();
     let mins = date.getMinutes();
+    let secs = date.getSeconds();
 }
 
