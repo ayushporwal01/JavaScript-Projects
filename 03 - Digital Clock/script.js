@@ -17,5 +17,6 @@ function updateClock() {
     }
 
     mins < 10 ? "0" + mins : mins;
+    secs < 10 ? "0" + secs : secs;
 }
 
