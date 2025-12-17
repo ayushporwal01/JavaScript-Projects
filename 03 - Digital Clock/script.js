@@ -24,5 +24,7 @@ function updateClock() {
     //Display the time
     clock.textContent = timeString;
 
+    setInterval(updateClock, 1000);
+
 }
 
