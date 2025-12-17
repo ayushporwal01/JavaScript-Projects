@@ -9,6 +9,9 @@ function updateClock() {
     let mins = date.getMinutes();
     let secs = date.getSeconds();
     let ampm = '';
-    set
+    
+    if(!is24HourFormat) {
+        
+    }
 }
 
