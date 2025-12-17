@@ -27,7 +27,8 @@ function updateClock() {
 
     // Toggle format on button click
     formatBtn.addEventListener('click', (e) => {
-
+       is24HourFormat = !is24HourFormat;
+       updateClock();
     })
 
     setInterval(updateClock, 1000);
