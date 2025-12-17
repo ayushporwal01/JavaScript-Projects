@@ -1,5 +1,5 @@
 let clock = document.querySelector('.clock');
 let formatBtn = document.querySelector('#format-btn');
 
-let is24HourFormat = false;
+let is24HourFormat = true;
 
