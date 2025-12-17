@@ -20,7 +20,7 @@ function updateClock() {
     mins = mins < 10 ? "0" + mins : mins;
     secs = secs < 10 ? "0" + secs : secs;
 
-    let timeString = `${hrs}:${mins}:${secs} ${ampm}`;
+    let timeString = `${hrs}:${mins} ${ampm}`;
 
     //Display the time
     clock.textContent = timeString;
