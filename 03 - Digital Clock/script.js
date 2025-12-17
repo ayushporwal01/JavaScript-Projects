@@ -26,5 +26,7 @@ function updateClock() {
 
     setInterval(updateClock, 1000);
 
+    //Initialize clock
+
 }
 
