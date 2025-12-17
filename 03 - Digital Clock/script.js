@@ -14,7 +14,7 @@ function updateClock() {
         //Convert to 12-hour Format
         ampm = hrs >= 12 ? 'PM' : 'AM';
         hrs = hrs % 12; 
-        hrs = hrs ? hrs : 12;
+        hrs = hrs ? hrs : 12; // Hour '0' should be '12'
     }
 }
 
