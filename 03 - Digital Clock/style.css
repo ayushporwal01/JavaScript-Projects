@@ -17,6 +17,7 @@
     align-items: center;
     background-color: black;
     color: white;
+    position: relative;
 }
 
 .clock {
@@ -29,4 +30,5 @@
     font-size: 1.1rem;
     text-transform: uppercase;
     cursor: pointer;
+    position: absolute;
 }
