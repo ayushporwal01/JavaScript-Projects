@@ -22,7 +22,8 @@
 
 .clock-container {
     display: flex;
-    gap: 10px;
+    border: 1px solid red;
+    position: relative;
 }
 
 .clock {
@@ -31,6 +32,7 @@
 
 .ampm {
     font-size: 3rem;
+    position: absolute;
 }
 
 #format-btn {
