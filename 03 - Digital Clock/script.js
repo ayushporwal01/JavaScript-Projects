@@ -15,5 +15,7 @@ function updateClock() {
         hrs = hrs % 12; 
         hrs = hrs ? hrs : 12;
     }
+
+    mins < 10 ? "0" + mins : mins;
 }
 
