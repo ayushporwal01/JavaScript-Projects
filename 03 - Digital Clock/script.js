@@ -8,5 +8,7 @@ function updateClock() {
     let hrs = date.getHours();
     let mins = date.getMinutes();
     let secs = date.getSeconds();
+    let ampm = '';
+    set
 }
 
