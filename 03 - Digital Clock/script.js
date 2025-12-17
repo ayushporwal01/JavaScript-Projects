@@ -25,6 +25,8 @@ function updateClock() {
     //Display the time
     clock.textContent = timeString;
 
+    // Toggle format on button click
+
     setInterval(updateClock, 1000);
 
     //Initialize clock
