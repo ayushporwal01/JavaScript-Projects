@@ -12,4 +12,4 @@ let setIntervalId;
 let score = 0;
 
 //Get high score from local storage
-let highScore = localStorage.getItem("high-score")
+let highScore = localStorage.getItem("high-score") || 0;
