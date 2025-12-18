@@ -12,6 +12,9 @@ let setIntervalId;
 let score = 0;
 
 //Get high score from local storage
+
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
+
+//Pass a random between 1 and 30 as food position
 
