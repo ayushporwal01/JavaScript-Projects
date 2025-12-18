@@ -45,7 +45,7 @@ body {
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 
-.play-board .food {
+.play-board .food { 
     background: #ff003d;
 }
 
@@ -66,4 +66,8 @@ body {
     width: calc(100% / 4);
     cursor: pointer;
     border-right: 1px solid #171b26;
+}
+
+@media screen and (max-width: 800px) {
+    
 }
