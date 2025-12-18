@@ -47,5 +47,5 @@ const changeDirection = () => {
     }
 }
 
-
+// Change direction on each key click
 
