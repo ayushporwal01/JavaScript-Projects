@@ -74,5 +74,8 @@ body {
     height: 115vmin;
    } 
 
-   
+   .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+   }
 }
