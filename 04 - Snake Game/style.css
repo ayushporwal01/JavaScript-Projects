@@ -42,4 +42,5 @@ body {
     width: 100%;
     display: grid;
     background: #212837;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
