@@ -78,4 +78,8 @@ body {
     font-size: 1rem;
     padding: 15px 27px;
    }
+
+   .controls {
+    display: flex;
+   }
 }
