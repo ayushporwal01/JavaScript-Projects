@@ -58,3 +58,6 @@ body {
     justify-content: space-between;
 }
 
+.controls i {
+    padding: 25px 0;
+}
