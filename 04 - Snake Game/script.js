@@ -99,3 +99,6 @@ const initGame = () => {
     }
     playBoard.innerHTML = html;
 }
+
+updateFoodPosition();
+setIntervalId = setInterval(initGame, 100);
