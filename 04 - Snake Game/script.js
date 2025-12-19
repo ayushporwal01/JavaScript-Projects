@@ -61,5 +61,7 @@ const initGame = () => {
     if(snakeX === foodX && snakeY === foodY) {
         updateFoodPosition();
         snakeBody.push([foodY, foodX]); //Add food to snake body array
+        score++;
+        highScore = score >= highScore ? score : highScore;
     }
 }
