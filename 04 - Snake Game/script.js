@@ -49,7 +49,7 @@ const changeDirection = (e) => {
 
 // Change direction on each key click
 
-controls.forEach(button => button.addEventListener("click", () => changeDirection({
+controls.forEach(button => button.addEventListener("click", (e) => changeDirection({
     key:button.dataset.key 
 })));
 
