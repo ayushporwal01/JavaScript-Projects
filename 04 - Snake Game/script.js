@@ -60,6 +60,6 @@ const initGame = () => {
     //When snake eat food
     if(snakeX === foodX && snakeY === foodY) {
         updateFoodPosition();
-        snakeBody.push([foodY, foodX]);
+        snakeBody.push([foodY, foodX]); //Add food to snake body array
     }
 }
