@@ -50,4 +50,5 @@ const changeDirection = () => {
 // Change direction on each key click
 
 controls.forEach(button => button.addEventListener("click", () => changeDirection({
-    key:button.dataset.key})));
+    key:button.dataset.key
+})));
