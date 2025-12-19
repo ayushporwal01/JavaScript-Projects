@@ -55,4 +55,6 @@ controls.forEach(button => button.addEventListener("click", () => changeDirectio
 
 const initGame = () => {
     if(gameOver) return handleGameOver();
+    let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
+    
 }
