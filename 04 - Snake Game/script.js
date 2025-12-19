@@ -72,4 +72,6 @@ const initGame = () => {
     //Update Snake Head
     snakeX += velocityX;
     snakeY += velocityY;
+
+    //Shifting forward values of elements in snake body by one
 }
