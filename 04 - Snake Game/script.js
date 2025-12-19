@@ -97,4 +97,5 @@ const initGame = () => {
             gameOver = true;
         }
     }
+    playBoard.innerHTML = html;
 }
