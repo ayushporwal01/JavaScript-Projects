@@ -68,4 +68,7 @@ const initGame = () => {
         scoreElement.innerText = `Score: ${score}`;
         highScoreElement.innerText = `High Score: ${highScore}`;
     }
+
+    //Update Snake Head
+    
 }
