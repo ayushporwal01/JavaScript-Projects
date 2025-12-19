@@ -52,3 +52,7 @@ const changeDirection = () => {
 controls.forEach(button => button.addEventListener("click", () => changeDirection({
     key:button.dataset.key 
 })));
+
+const initGame = () => {
+    if(gameOver) return handleGameOver();
+}
