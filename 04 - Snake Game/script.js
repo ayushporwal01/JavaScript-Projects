@@ -70,5 +70,6 @@ const initGame = () => {
     }
 
     //Update Snake Head
-    
+    snakeX += velocityX;
+    snakeY += velocityY;
 }
