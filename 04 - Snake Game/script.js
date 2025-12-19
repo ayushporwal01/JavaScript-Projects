@@ -62,6 +62,6 @@ const initGame = () => {
         updateFoodPosition();
         snakeBody.push([foodY, foodX]); //Add food to snake body array
         score++;
-        highScore = score >= highScore ? score : highScore; //if score > high score
+        highScore = score >= highScore ? score : highScore; //if score > high score => high score = score
     }
 }
