@@ -74,4 +74,8 @@ const initGame = () => {
     snakeY += velocityY;
 
     //Shifting forward values of elements in snake body by one
+
+    for(let i = snakeBody.length - 1; i > 0; i--) {
+        snakeBody[i] = snakeBody[i - 1];
+    }
 }
