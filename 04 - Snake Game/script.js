@@ -86,4 +86,7 @@ const initGame = () => {
     if(snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
        return gameOver = true;
     }
+
+    //Add div for each part of snake body
+    
 }
