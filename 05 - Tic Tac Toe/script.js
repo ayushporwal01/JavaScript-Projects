@@ -33,7 +33,7 @@ boxes.forEach((box) => {
 
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
-    msg.remove.classList.remove("hide");
+    msg.classList.remove("hide");
 }
 
 const checkWinner = () => {
