@@ -34,7 +34,7 @@ body {
     font-size: 3rem;
     color: rgb(101, 101, 101);
     background: white;
-    border: 1px solid rgb(109, 109, 109);
+    border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
 }
 
