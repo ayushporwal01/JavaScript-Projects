@@ -30,7 +30,9 @@ boxes.forEach((box) => {
 });
 
 const checkWinner = () => {
-
+    for(let pattern of winPatterns) {
+        
+    }
 }
 
 
