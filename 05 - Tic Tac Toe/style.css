@@ -23,8 +23,8 @@ body {
 
 .game {
     border: 1px solid black;
-    min-height: 350px;
-    min-width: 400px;
+    height: 350px;
+    width: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
