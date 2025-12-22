@@ -60,6 +60,13 @@ const checkWinner = () => {
                 }, 50);
                 return; 
             }
+            else {
+                setTimeout(() => {
+                    alert("OOPS its a Draw!");
+                    disableBoxes();
+                }, 50);
+                return; 
+            }
         }
     }
 }
