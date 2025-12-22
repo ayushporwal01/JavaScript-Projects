@@ -14,7 +14,6 @@ body {
 
 .container {
     min-height: 100vh;
-    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +38,4 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 25px;
 }
