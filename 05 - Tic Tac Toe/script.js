@@ -14,5 +14,14 @@ let winPatterns = [
     [2, 4, 6]
 ];
 
+boxes.forEach((box) => {
+    box.addEventListener("click", () => {
+        if(turnO) {
+           box.innerText = "O";
+           turnO = false;
+        }
+    })
+})
+
 
 
