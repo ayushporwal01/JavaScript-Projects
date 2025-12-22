@@ -39,7 +39,10 @@ body {
 
 #msg {
     font-size: 3rem;
-    display: hidden;
+}
+
+.hide {
+    display: none;
 }
 
 #new-game-btn, #reset-btn {
