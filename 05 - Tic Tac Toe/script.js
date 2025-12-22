@@ -32,7 +32,7 @@ boxes.forEach((box) => {
 });
 
 const showWinner = (winner) => {
-    msg = ``
+    msg.innerText = `Congratulations, Winner is ${winner}`;
 }
 
 const checkWinner = () => {
