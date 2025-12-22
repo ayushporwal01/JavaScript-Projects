@@ -47,6 +47,8 @@ const disableBoxes = () => {
 }
 
 const checkWinner = () => {
+    let winnerFound = false;
+
     for(let pattern of winPatterns) {
         let pos1Val = boxes[pattern[0]].innerText;
         let pos2Val = boxes[pattern[1]].innerText;
@@ -54,6 +56,7 @@ const checkWinner = () => {
 
         if(pos1Val !== "" && pos2Val !== "" && pos3Val !== "") {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
+                winnerFound = true;
                 setTimeout(() => {
                     alert(`Congratulations, Winner is ${pos1Val}`);
                     disableBoxes();
@@ -63,11 +66,13 @@ const checkWinner = () => {
         }
     }
     
-    setTimeout(() => {
-        alert("OOPS its a Draw!");
-        disableBoxes();
-    }, 50);
-    return; 
+    if (!winnerFound) {
+        setTimeout(() => {
+            alert("OOPS its a Draw!");
+            disableBoxes();
+        }, 50);
+    }
+   
 }
 
 resetBtn.addEventListener("click", resetGame);
