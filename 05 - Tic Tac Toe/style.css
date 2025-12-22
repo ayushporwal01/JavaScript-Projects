@@ -38,6 +38,10 @@ body {
     cursor: pointer;
 }
 
+#msg {
+    font-size: 3rem;
+}
+
 #reset-btn {
     padding: 7px 15px;
     font-size: 1.3rem;
