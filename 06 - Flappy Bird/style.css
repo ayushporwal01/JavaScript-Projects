@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.game {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+}
