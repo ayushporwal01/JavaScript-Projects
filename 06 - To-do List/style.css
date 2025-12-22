@@ -11,19 +11,21 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
     border: 1px solid black;
-    width: 650px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.3rem;
-    padding-top: 3rem;
+    padding: 2rem;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 500;
 }
+
