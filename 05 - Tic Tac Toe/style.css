@@ -22,16 +22,19 @@ body {
 }
 
 .game {
-    border: 1px solid black;
     height: 350px;
     width: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
 }
 
 .box { 
     font-size: 3rem;
+    color: rgb(101, 101, 101);
+    background: white;
+    border: 1px solid rgb(109, 109, 109);
     cursor: pointer;
 }
 
