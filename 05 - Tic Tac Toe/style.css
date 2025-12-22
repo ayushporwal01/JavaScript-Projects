@@ -29,10 +29,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.box {
-    height: 100%;
-    width: 100%;  
-    box-sizing: border-box;
+.box { 
     font-size: 3rem;
     cursor: pointer;
 }
