@@ -30,6 +30,9 @@ body {
 }
 
 .box {
+    height: 100%;
+    width: 100%;  
+    box-sizing: border-box;
     font-size: 3rem;
     cursor: pointer;
 }
