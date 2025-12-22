@@ -1,4 +1,4 @@
-let box = document.querySelectorAll('.box');
+let boxes = document.querySelectorAll('.box');
 let resetBtn = document.querySelector('#reset-btn');
 
 
