@@ -11,3 +11,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    border: 1px solid black;
+    min-height: 400px;
+    min-width: 450px;
+}
