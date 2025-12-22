@@ -24,6 +24,7 @@ boxes.forEach((box) => {
            turnO = true;
         }
     })
+    box.disabled = true;
 });
 
 
