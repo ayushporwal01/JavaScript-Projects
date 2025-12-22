@@ -72,7 +72,6 @@ const checkWinner = () => {
             disableBoxes();
         }, 50);
     }
-   
 }
 
 resetBtn.addEventListener("click", resetGame);
