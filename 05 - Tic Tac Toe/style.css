@@ -26,7 +26,8 @@ body {
     height: 350px;
     width: 400px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .box { 
