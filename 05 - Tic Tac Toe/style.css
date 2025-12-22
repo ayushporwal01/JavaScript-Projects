@@ -41,6 +41,6 @@ body {
     color: white;
     border: none;
     outline: none;
-    border: none;
+    border-radius: 8px;
     cursor: pointer;
 }
