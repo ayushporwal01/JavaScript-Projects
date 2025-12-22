@@ -17,9 +17,6 @@ let winPatterns = [
 const resetGame = () => {
     turnO = true;
     enableBoxes();
-    resetBtn.addEventListener("click", () => {
-        
-    });
 }
 
 boxes.forEach((box) => {
