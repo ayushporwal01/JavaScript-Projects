@@ -14,6 +14,10 @@ let winPatterns = [
     [2, 4, 6]
 ];
 
+const resetGame = () => {
+    
+}
+
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if(turnO) {
