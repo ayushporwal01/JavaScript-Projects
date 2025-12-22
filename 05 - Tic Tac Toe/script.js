@@ -73,14 +73,15 @@ const checkWinner = () => {
                 isDraw = false;
             }
         });
+        
+        if (isDraw) {
+            setTimeout(() => {
+                alert("OOPS, It's a Draw!");
+                disableBoxes();
+            }, 50);
+        }
     }
 
-    if (isDraw) {
-        setTimeout(() => {
-            alert("OOPS, It's a Draw!");
-            disableBoxes();
-        }, 50);
-    }
 }
 
 resetBtn.addEventListener("click", resetGame);
