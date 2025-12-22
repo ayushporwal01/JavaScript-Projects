@@ -16,6 +16,7 @@ let winPatterns = [
 
 const resetGame = () => {
     turnO = true;
+    enableBoxes();
     resetBtn.addEventListener("click", () => {
         
     });
@@ -35,6 +36,18 @@ boxes.forEach((box) => {
         checkWinner();
     })
 });
+
+const enableBoxes = () => {
+    for(let box of boxes) {
+        box.disabled = false;
+        box.innerText = "";
+    }
+}
+const disableBoxes = () => {
+    for(let box of boxes) {
+        box.disabled = true;
+    }
+}
 
 const checkWinner = () => {
     for(let pattern of winPatterns) {
