@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,10 +40,6 @@ body {
 #msg {
     font-size: 3rem;
     display: hidden;
-}
-
-.btn-container {
-    
 }
 
 #new-game-btn, #reset-btn {
