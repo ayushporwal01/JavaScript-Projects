@@ -15,7 +15,10 @@ let winPatterns = [
 ];
 
 const resetGame = () => {
-    
+    turnO = true;
+    resetBtn.addEventListener("click", () => {
+        
+    });
 }
 
 boxes.forEach((box) => {
@@ -43,6 +46,7 @@ const checkWinner = () => {
             if(pos1Val == pos2Val && pos2Val == pos3Val) {
                alert("Congratulations, Winner is O");
             } else alert("Congratulations, Winner is X");
+            disableBoxes();
         }
     }
 }
