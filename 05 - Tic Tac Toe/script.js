@@ -17,22 +17,25 @@ let winPatterns = [
 const resetGame = () => {
     turnO = true;
     enableBoxes();
+    attachEventListeners(); 
 }
 
-boxes.forEach((box) => {
-    box.addEventListener("click", () => {
-        if(turnO) {
-           box.innerText = "O";
-           turnO = false;
-        } else {
-           box.innerText = "X";
-           turnO = true;
-        }
-        box.disabled = true;
+const attachEventListeners = () => {
+    boxes.forEach((box) => {
+        box.addEventListener("click", () => {
+            if(turnO) {
+            box.innerText = "O";
+            turnO = false;
+            } else {
+            box.innerText = "X";
+            turnO = true;
+            }
+            box.disabled = true;
 
-        checkWinner();
-    })
-});
+            checkWinner();
+        })
+    });
+};
 
 const enableBoxes = () => {
     for(let box of boxes) {
@@ -73,7 +76,7 @@ const checkWinner = () => {
                 isDraw = false;
             }
         });
-        
+
         if (isDraw) {
             setTimeout(() => {
                 alert("OOPS, It's a Draw!");
