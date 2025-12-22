@@ -43,6 +43,10 @@ body {
     display: hidden;
 }
 
+.btn-container {
+    
+}
+
 #new-game-btn, #reset-btn {
     padding: 7px 15px;
     font-size: 1.3rem;
