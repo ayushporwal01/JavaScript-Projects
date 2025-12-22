@@ -45,7 +45,7 @@ body {
     display: none;
 }
 
-#new-game-btn, #reset-btn {
+#reset-btn {
     padding: 7px 15px;
     font-size: 1.3rem;
     background: rgb(90, 90, 90);
