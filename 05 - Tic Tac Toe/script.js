@@ -67,8 +67,17 @@ const checkWinner = () => {
     }
     
     if (!winnerFound) {
+        let isDraw = true;
+        boxes.forEach((box) => {
+            if (box.innerText === "") {
+                isDraw = false;
+            }
+        });
+    }
+
+    if (isDraw) {
         setTimeout(() => {
-            alert("OOPS its a Draw!");
+            alert("OOPS, It's a Draw!");
             disableBoxes();
         }, 50);
     }
