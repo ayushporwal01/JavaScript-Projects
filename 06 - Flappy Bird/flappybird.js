@@ -44,6 +44,12 @@ window.onload = () => {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
 
+    topPipeImg = new Image();
+    topPipeImg.src = "./assets/toppipe.png";
+
+    bottomPipeImg = new Image();
+    bottomPipeImg.src = "./assets/bottompipe.png";
+
     requestAnimationFrame();
 }
 
