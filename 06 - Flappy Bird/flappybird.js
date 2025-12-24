@@ -9,4 +9,4 @@ window.onload = () => {
     board.height = boardHeight;
     board.width = boardWidth;
     context = board.getContext("2d");
-})
+}
