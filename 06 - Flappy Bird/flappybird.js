@@ -99,7 +99,7 @@ function update() {
     //score
     context.fillStyle = "white";
     context.font = "45px sans-serif";
-    context.fillText(score, 20, 48);
+    context.fillText(score, 15, 48);
 }
 
 function placePipes() {
