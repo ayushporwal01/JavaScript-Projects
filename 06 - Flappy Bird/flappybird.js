@@ -10,6 +10,13 @@ let birdHeight = 24;
 let birdX = boardWidth/8;
 let birdY = boardHeight/2;
 
+let bird = {
+    x : birdX,
+    y : birdY,
+    width : birdWidth,
+    height : birdHeight
+}
+
 window.onload = () => {
     board = document.getElementById('board');
     board.height = boardHeight;
