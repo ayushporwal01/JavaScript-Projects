@@ -5,3 +5,11 @@
     user-select: none;
     font-family: 'Courier New', Courier, monospace;
 }
+
+body {
+    text-align: center;
+}
+
+#board {
+    background-color: skyblue;
+}
