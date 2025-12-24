@@ -60,6 +60,12 @@ function update() {
 
     //bird
     context.drawImage(bird.x, bird.y, bird.width, bird.height);
+
+    //pipe
+    for(let i = 0; i < pipeArray.length; i++) {
+        let pipe = pipeArray[i];
+        context.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height);
+    }
 }
 
 function placePipes() {
