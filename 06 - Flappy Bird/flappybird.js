@@ -32,6 +32,8 @@ let velocityX = -2; //pipes moving left speed
 let velocityY = 0; //bird jump speed
 let gravity = 0.4; 
 
+let gameOver = false;
+
 window.onload = () => {
     board = document.getElementById('board');
     board.height = boardHeight;
@@ -116,5 +118,10 @@ function moveBird(e) {
 }
 
 function detectCollision(a, b) {
+    return a.x < b.x + b.width &&
+           a.x + a.width > b.x &&
+           a.y < b.y + b.height &&
+           a.y + a.height > b.y;
 
+    
 }
