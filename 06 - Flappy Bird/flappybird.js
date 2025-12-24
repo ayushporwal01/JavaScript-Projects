@@ -96,6 +96,11 @@ function update() {
         }
     }
 
+    //clear pipes
+    while(pipeArray.length > 0 && pipeArray[0].x < 0) {
+        pipeArray.shift(); //removes first element from the array
+    }
+
     //score
     context.fillStyle = "white";
     context.font = "45px sans-serif";
