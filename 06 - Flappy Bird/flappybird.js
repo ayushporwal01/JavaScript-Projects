@@ -105,6 +105,10 @@ function update() {
     context.fillStyle = "white";
     context.font = "45px sans-serif";
     context.fillText(score, 15, 48);
+
+    if(gameOver) {
+       context.fillStyle = "GAME OVER";
+    }
 }
 
 function placePipes() {
