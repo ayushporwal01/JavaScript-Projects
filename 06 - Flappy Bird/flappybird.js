@@ -87,7 +87,7 @@ function update() {
         context.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height);
 
         if(!pipe.passed && bird.x > pipe.x + pipe.width) {
-           score += 1;
+           score += 0.5; //0.5 because there are 2 pipes! so 0.5 * 2 = 1
            pipe.passed = true;
         }
 
@@ -99,7 +99,7 @@ function update() {
     //score
     context.fillStyle = "white";
     context.font = "45px sans-serif";
-    context.fillText(score, 5, 45);
+    context.fillText(score, 20, 48);
 }
 
 function placePipes() {
