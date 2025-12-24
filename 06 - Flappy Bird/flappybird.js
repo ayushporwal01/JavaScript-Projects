@@ -17,6 +17,11 @@ let bird = {
     height : birdHeight
 }
 
+//pipes
+let pipeArray = [];
+let pipeWidth = 64;
+let pipeHeight = 512;
+
 window.onload = () => {
     board = document.getElementById('board');
     board.height = boardHeight;
@@ -33,8 +38,14 @@ window.onload = () => {
     birdImg.onload = () => {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
+
+    requestAnimationFrame();
 }
 
 function update() {
-    
+    requestAnimationFrame(update);
+    context.clearRect(0, 0, board.width, board.height);
+
+    //bird
+    context.drawImage(bird.x, bird.y, bird.width, bird.height);
 }
