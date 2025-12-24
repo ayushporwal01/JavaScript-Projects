@@ -34,3 +34,7 @@ window.onload = () => {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
 }
+
+function update() {
+    
+}
