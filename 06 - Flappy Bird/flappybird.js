@@ -4,9 +4,9 @@ let boardWidth = 360;
 let boardHeight = 640;
 let context;
 
-window.onload(() => {
+window.onload = () => {
     board = document.getElementById('board');
     board.height = boardHeight;
     board.width = boardWidth;
-    context = board.context("2d");
+    context = board.getContext("2d");
 })
