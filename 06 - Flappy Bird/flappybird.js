@@ -97,7 +97,7 @@ function update() {
     }
 
     //clear pipes
-    while(pipeArray.length > 0 && pipeArray[0].x < 0) {
+    while(pipeArray.length > 0 && pipeArray[0].x < -pipeWidth) {
         pipeArray.shift(); //removes first element from the array
     }
 
