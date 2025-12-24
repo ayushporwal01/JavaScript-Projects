@@ -88,6 +88,7 @@ function placePipes() {
         height : pipeHeight,
         passed : false
     }
+    pipeArray.push(topPipe);
 
     let BottomPipe = {
         img : bottomPipeImg,
@@ -97,6 +98,5 @@ function placePipes() {
         height : pipeHeight,
         passed : false
     }
-
-    pipeArray.push(topPipe);
+    pipeArray.push(bottomPipe);
 }
