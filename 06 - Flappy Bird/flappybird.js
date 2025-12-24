@@ -33,6 +33,7 @@ let velocityY = 0; //bird jump speed
 let gravity = 0.4; 
 
 let gameOver = false;
+let score = 0;
 
 window.onload = () => {
     board = document.getElementById('board');
