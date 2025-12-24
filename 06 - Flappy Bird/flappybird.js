@@ -114,3 +114,7 @@ function moveBird(e) {
         
     }
 }
+
+function detectCollision(a, b) {
+
+}
