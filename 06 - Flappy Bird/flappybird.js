@@ -107,7 +107,7 @@ function update() {
     context.fillText(score, 15, 48);
 
     if(gameOver) {
-       context.fillStyle = "GAME OVER";
+       context.fillText("GAME OVER", 40, 150);
     }
 }
 
