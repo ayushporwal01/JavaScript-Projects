@@ -64,6 +64,7 @@ function update() {
     context.clearRect(0, 0, board.width, board.height);
 
     //bird
+    bird.y += velocityY;
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 
     //pipe
@@ -101,4 +102,12 @@ function placePipes() {
         passed : false
     }
     pipeArray.push(bottomPipe);
+}
+
+function moveBird(e) {
+    if(e.code == "Space" || e.code == "ArrowUp") {
+       //jump
+       velocityY = -6;
+        
+    }
 }
