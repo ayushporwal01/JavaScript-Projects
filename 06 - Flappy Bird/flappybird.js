@@ -88,6 +88,9 @@ function update() {
 }
 
 function placePipes() {
+    if(gameOver) {
+       return;
+    } 
 
     //(0-1) * pipeHeight/2
     //0 -> -128 (pipeHeight/4)
