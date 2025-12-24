@@ -78,11 +78,21 @@ function placePipes() {
     //0 -> -128 (pipeHeight/4)
     //1 -> -128 - 256 (pipeHeight/4 - pipeHeight/2) = -3/4 pipeHeight
     let randomPipeY = pipeY - pipeHeight/4 - Math.random() * (pipeHeight/2);
+    let openingSpace = board.height/4;
 
     let topPipe = {
         img : topPipeImg,
         x : pipeX,
         y : randomPipeY,
+        width : pipeWidth,
+        height : pipeHeight,
+        passed : false
+    }
+
+    let BottomPipe = {
+        img : bottomPipeImg,
+        x : pipeX,
+        y : randomPipeY + pipeHeight + openingSpace,
         width : pipeWidth,
         height : pipeHeight,
         passed : false
