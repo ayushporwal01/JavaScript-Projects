@@ -53,7 +53,7 @@ window.onload = () => {
     bottomPipeImg = new Image();
     bottomPipeImg.src = "./assets/bottompipe.png";
 
-    requestAnimationFrame();
+    requestAnimationFrame(update);
     setInterval(placePipes, 1500); //every 1.5 seconds
 }
 
@@ -62,7 +62,7 @@ function update() {
     context.clearRect(0, 0, board.width, board.height);
 
     //bird
-    context.drawImage(bird.x, bird.y, bird.width, bird.height);
+    context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 
     //pipe
     for(let i = 0; i < pipeArray.length; i++) {
