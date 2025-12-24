@@ -73,6 +73,8 @@ function update() {
 }
 
 function placePipes() {
+    let randomPipeY = pipeY - pipeHeight/4 - Math.random() * (pipeHeight/2);
+    
     let topPipe = {
         img : topPipeImg,
         x : pipeX,
