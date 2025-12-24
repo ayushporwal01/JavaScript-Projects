@@ -22,4 +22,15 @@ window.onload = () => {
     board.height = boardHeight;
     board.width = boardWidth;
     context = board.getContext("2d"); //used for drawing on the board
+
+    //draw bird
+    //context.fillStyle = "green";
+    //context.fillRect(bird.x, bird.y, bird.width, bird.height);
+
+    //load images
+    birdImg = new Image();
+    birdImg.src = "./assets/flappybird.png";
+    birdImg.onload = () => {
+        context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+    }
 }
