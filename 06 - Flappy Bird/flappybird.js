@@ -19,7 +19,7 @@ let bird = {
 
 //pipes
 let pipeArray = [];
-let pipeWidth = 64;
+let pipeWidth = 64; //width/height ratio = 384/3072 = 1/8
 let pipeHeight = 512;
 
 window.onload = () => {
