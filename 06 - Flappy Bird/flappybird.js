@@ -72,5 +72,5 @@ function placePipes() {
         passed : false
     }
 
-    
+    pipeArray.push(topPipe);
 }
