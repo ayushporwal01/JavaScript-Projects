@@ -7,6 +7,8 @@ let context;
 //bird
 let birdWidth = 34; //width/height ratio = 408/228 = 17/12
 let birdHeight = 24;
+let birdX = boardWidth/8;
+let birdY = boardHeight/2;
 
 window.onload = () => {
     board = document.getElementById('board');
