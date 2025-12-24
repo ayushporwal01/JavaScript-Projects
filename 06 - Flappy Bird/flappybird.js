@@ -8,5 +8,5 @@ window.onload(() => {
     board = document.getElementById('board');
     board.height = boardHeight;
     board.width = boardWidth;
-    board.context = context;
+    context = board.context("2d");
 })
