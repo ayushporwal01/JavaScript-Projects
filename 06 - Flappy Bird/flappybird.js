@@ -4,6 +4,10 @@ let boardWidth = 360;
 let boardHeight = 640;
 let context;
 
+//bird
+let birdWidth = 17;
+let birdHeight = 24;
+
 window.onload = () => {
     board = document.getElementById('board');
     board.height = boardHeight;
