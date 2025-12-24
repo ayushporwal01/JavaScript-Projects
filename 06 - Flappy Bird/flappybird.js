@@ -89,6 +89,11 @@ function update() {
            gameOver = true;
         }
     }
+
+    //score
+    context.fillStyle = "white";
+    context.font = "45px sans-serif";
+    context.fillText(score, 5, 45);
 }
 
 function placePipes() {
