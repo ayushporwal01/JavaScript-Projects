@@ -75,6 +75,10 @@ function update() {
     bird.y = Math.max(bird.y + velocityY, 0); //appy gravity to current bird.y, limit the bird.y to top of the canvas
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 
+    if(bird.y > board.height) {
+       gameOver = true;
+    }
+
     //pipe
     for(let i = 0; i < pipeArray.length; i++) {
         let pipe = pipeArray[i];
