@@ -90,7 +90,7 @@ function placePipes() {
     }
     pipeArray.push(topPipe);
 
-    let BottomPipe = {
+    let bottomPipe = {
         img : bottomPipeImg,
         x : pipeX,
         y : randomPipeY + pipeHeight + openingSpace,
