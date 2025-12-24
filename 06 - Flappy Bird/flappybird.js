@@ -64,6 +64,9 @@ window.onload = () => {
 
 function update() {
     requestAnimationFrame(update);
+    if(gameOver) {
+       return;
+    }
     context.clearRect(0, 0, board.width, board.height);
 
     //bird
@@ -77,6 +80,10 @@ function update() {
         let pipe = pipeArray[i];
         pipe.x += velocityX;
         context.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height);
+
+        if(detectCollision(bird, pipe)) {
+           gameOver = true;
+        }
     }
 }
 
