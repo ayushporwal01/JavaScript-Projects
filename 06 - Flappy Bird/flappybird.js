@@ -148,6 +148,14 @@ function moveBird(e) {
        //jump
        velocityY = -6;
     }
+
+    //reset game
+    if(gameOver) {
+       bird.y = birdY;
+       pipeArray = [];
+       score = 0;
+       gameOver = false;
+    }
 }
 
 function detectCollision(a, b) {
