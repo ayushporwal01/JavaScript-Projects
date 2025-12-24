@@ -21,6 +21,11 @@ let bird = {
 let pipeArray = [];
 let pipeWidth = 64; //width/height ratio = 384/3072 = 1/8
 let pipeHeight = 512;
+let pipeX = boardWidth;
+let pipeY = 0;
+
+let topPipeImg;
+let bottomPipeImg;
 
 window.onload = () => {
     board = document.getElementById('board');
