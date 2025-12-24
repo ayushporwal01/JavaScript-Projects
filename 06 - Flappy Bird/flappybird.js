@@ -79,11 +79,16 @@ function update() {
        gameOver = true;
     }
 
-    //pipe
+    //pipes
     for(let i = 0; i < pipeArray.length; i++) {
         let pipe = pipeArray[i];
         pipe.x += velocityX;
         context.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height);
+
+        if(!pipe.passed && bird.x > pipe.x + pipe.width) {
+           score += 1;
+           pipe.passed = true;
+        }
 
         if(detectCollision(bird, pipe)) {
            gameOver = true;
