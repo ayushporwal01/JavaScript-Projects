@@ -5,7 +5,7 @@ let boardHeight = 640;
 let context;
 
 //bird
-let birdWidth = 17;
+let birdWidth = 34;
 let birdHeight = 24;
 
 window.onload = () => {
