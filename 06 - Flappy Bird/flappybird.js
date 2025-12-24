@@ -127,7 +127,6 @@ function moveBird(e) {
     if(e.code == "Space" || e.code == "ArrowUp") {
        //jump
        velocityY = -6;
-        
     }
 }
 
