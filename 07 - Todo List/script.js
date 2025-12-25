@@ -30,7 +30,7 @@ function renderTasks() {
     taskList.innerHTML = '';
 
     tasks.forEach((task, index) => {
-        const taskElement = createTask(task, index);
+        const taskElement = createTasks(task, index);
         taskList.appendChild(taskElement);
     });
 }
