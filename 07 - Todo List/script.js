@@ -5,3 +5,8 @@ let taskList = document.getElementById('task-list');
 //Load Tasks
 let saved = localStorage.getItem('tasks');
 let tasks = saved ? JSON.parse(saved) : [];
+
+//Save Tasks
+function SaveTask() {
+   localStorage.setItem('tasks', JSON.stringify(tasks));
+}
