@@ -13,3 +13,12 @@ function saveTask() {
 function createTask() {
 
 }
+
+function renderTasks() {
+    taskList.innerHTML = '';
+
+    tasks.forEach((task, index) => {
+        const task = createTask(task, index);
+        taskList.appendChild(task);
+    });
+}
