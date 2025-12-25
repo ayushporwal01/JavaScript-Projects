@@ -10,7 +10,7 @@ function saveTask() {
    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-function createTask() {
+function createTask(task, index) {
 
 }
 
