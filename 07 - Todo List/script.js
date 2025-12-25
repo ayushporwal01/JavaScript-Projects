@@ -6,6 +6,10 @@ let taskList = document.getElementById('task-list');
 let saved = localStorage.getItem('tasks');
 let tasks = saved ? JSON.parse(saved) : [];
 
-function SaveTask() {
+function saveTask() {
    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function createTask() {
+
 }
