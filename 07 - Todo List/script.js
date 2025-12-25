@@ -7,11 +7,19 @@ let saved = localStorage.getItem('tasks');
 let tasks = saved ? JSON.parse(saved) : [];
 
 function saveTask() {
-   localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 function createTask(task, index) {
+    const li = document.createElement('li');
 
+    //checkbox to toggle completion
+    const checkbox = docuement.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = task.completed;
+    checkbox.addEventListener("change", () => {
+        todo.completed = checkbox.checked;
+    })
 }
 
 function renderTasks() {
