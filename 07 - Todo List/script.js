@@ -19,6 +19,10 @@ function createTask(task, index) {
     checkbox.checked = task.completed;
     checkbox.addEventListener("change", () => {
         todo.completed = checkbox.checked;
+
+        //Strike-Through when completed
+
+        saveTasks();
     })
 }
 
