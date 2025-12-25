@@ -16,7 +16,7 @@ function createTasks(task, index) {
     //checkbox to toggle completion
     const checkbox = docuement.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.checked = !!task.completed; //convert to true or false
+    checkbox.checked = !!task.completed; //convert any value to true or false
     checkbox.addEventListener("change", () => {
         todo.completed = checkbox.checked;
 
