@@ -76,6 +76,9 @@ function renderTasks() {
         const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
     });
+    
+    // After rendering the tasks, adjust the checkbox alignment
+    adjustCheckboxAlignment();
 }
 
 // Function to adjust checkbox alignment based on text wrapping
