@@ -58,7 +58,7 @@ p {
     overflow-y: auto;
 }
 
-.list-item {
+.todo-item {
     background-color: rgb(232, 232, 232);
     margin: 10px;
     padding: 10px;
@@ -69,9 +69,16 @@ p {
     align-items: center;
 }
 
-.list-item input[type="checkbox"] {
+.todo-item input[type="checkbox"] {
     width: 15px;
     height: 20px;
+    vertical-align: top;
+}
+
+.todo-item span {
+    white-space: normal;
+    max-width: 240px;
+    word-wrap: break-word;
 }
 
 .task-content {

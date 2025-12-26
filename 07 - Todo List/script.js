@@ -14,7 +14,7 @@ function createTask(task, index) {
     
     const li = document.createElement('li');
     li.style.listStyle = "none";
-    li.classList.add('list-item');
+    li.classList.add('todo-item');
     
     //wrapper inside li for checkbox and textSpan
     const taskDiv = document.createElement('div');
@@ -76,6 +76,31 @@ function renderTasks() {
     tasks.forEach((task, index) => {
         const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
+    });
+}
+
+// Function to adjust checkbox alignment based on text wrapping
+function adjustCheckboxAlignment() {
+    const todoItems = document.querySelectorAll('.todo-item');
+    
+    todoItems.forEach(item => {
+        const checkbox = item.querySelector('.checkbox');
+        const label = item.querySelector('.task-content span');
+
+        // Function to check if the text has wrapped
+        function checkTextWrap() {
+            if (label.scrollHeight > label.clientHeight) {
+                // If text is wrapped, align checkbox to the top of text
+                item.style.alignItems = "flex-start";
+            } else {
+                // If text is a single line, align checkbox to center vertically
+                item.style.alignItems = "baseline";
+            }
+        }
+
+        // Run check initially and when window is resized
+        checkTextWrap();
+        window.addEventListener('resize', checkTextWrap);
     });
 }
 
