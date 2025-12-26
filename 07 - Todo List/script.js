@@ -24,7 +24,25 @@ function createTasks(task, index) {
 
         saveTasks();
     })
+
+    //Todo Text
+    const textSpan = document.createElement("span");
+    textSpan.textContent = task.text; 
+    textSpan.style.margin = `0 8px`;
+    if(task.completed) {
+        textSpan.style.textDecoration = `line-through`;
+
+        //Add double-click event listener
+        document.addEventListener("dblclick", () => {
+            const newText = prompt("Edit Task", task.text);
+            if(newText !== null) {
+               task.text = newText.trim();
+            }
+
+        })
+    }
 }
+
 
 function renderTasks() {
     taskList.innerHTML = '';
