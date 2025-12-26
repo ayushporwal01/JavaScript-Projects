@@ -64,6 +64,12 @@ function addTask() {
     if(!text) {
        return;
     }
+
+    //Push a new task object
+    tasks.push({text, completed: false});
+    input.value = '';
+    renderTasks();
+    saveTasks();
 }
 
 
