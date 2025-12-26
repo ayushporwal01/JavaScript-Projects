@@ -16,6 +16,7 @@ function createTask(task, index) {
     li.style.listStyle = "none";
     li.classList.add('list-item');
     
+    //wrapper for checkbox and taskSpan
     const taskDiv = document.createElement('div');
     taskDiv.classList.add('task-container');
  
