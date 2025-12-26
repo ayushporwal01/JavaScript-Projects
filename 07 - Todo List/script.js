@@ -11,6 +11,9 @@ function saveTasks() {
 }
 
 function createTask(task, index) {
+    const taskDiv = document.createElement('div');
+    taskDiv.classList.add('task-container');
+
     const li = document.createElement('li');
     li.style.listStyle = "none";
     li.classList.add('list-item');
@@ -58,7 +61,9 @@ function createTask(task, index) {
     li.appendChild(checkbox);
     li.appendChild(textSpan);
     li.appendChild(delBtn);
-    return li;
+    
+    taskDiv.appendChild(li);
+    return taskDiv;
 }
 
 function renderTasks() {
