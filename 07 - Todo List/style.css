@@ -72,7 +72,6 @@ p {
 .todo-item input[type="checkbox"] {
     width: 15px;
     height: 20px;
-    vertical-align: top;
 }
 
 .todo-item span {
@@ -84,6 +83,7 @@ p {
 .task-content {
     margin-left: 6px;
     display: flex;
+    gap: 3px;
     align-items: center;
 }
 
