@@ -85,9 +85,6 @@ function createTask(task, index) {
 
     li.appendChild(taskDiv);
     li.appendChild(delBtn);
-
-    // Check for text wrap after element is added to DOM
-    checkTextWrap(textSpan, taskDiv);
     
     return li;
 }
@@ -99,6 +96,7 @@ function renderTasks() {
         const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
     });
+    checkTextWrap(textSpan, taskDiv);
 }
 
 function addTask() {
