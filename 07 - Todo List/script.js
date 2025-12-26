@@ -55,6 +55,7 @@ function createTasks(task, index) {
         li.appendChild(checkbox);
         li.appendChild(textSpan);
         li.appendChild(delBtn);
+        return li;
     }
 }
 
