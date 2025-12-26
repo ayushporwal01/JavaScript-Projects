@@ -76,31 +76,6 @@ function renderTasks() {
         const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
     });
-    
-    // After rendering the tasks, adjust the checkbox alignment
-    setTimeout(adjustAllCheckboxes, 0);
-}
-
-function adjustCheckboxAlignment(todoItem, textSpan) {
-    const lineHeight = parseFloat(getComputedStyle(textSpan).lineHeight);
-    const textHeight = textSpan.offsetHeight;
-    
-    if (textHeight > lineHeight * 1.5) {
-        todoItem.style.alignItems = "flex-start";
-        todoItem.querySelector('input[type="checkbox"]').style.marginTop = "2px";
-    } else {
-        todoItem.style.alignItems = "center";
-        todoItem.querySelector('input[type="checkbox"]').style.marginTop = "0";
-    }
-}
-
-function adjustAllCheckboxes() {
-    const todoItems = document.querySelectorAll('.todo-item');
-    
-    todoItems.forEach(item => {
-        const textSpan = item.querySelector('.task-content span');
-        adjustCheckboxAlignment(item, textSpan);
-    });
 }
 
 function addTask() {
@@ -122,8 +97,4 @@ taskInput.addEventListener('keydown', (e) => {
        addTask();
     }
 })
-
-window.addEventListener('resize', adjustAllCheckboxes);
-
-// Initial render of tasks
 renderTasks();
