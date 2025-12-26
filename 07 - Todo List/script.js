@@ -96,6 +96,10 @@ function renderTasks() {
         const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
     });
+    
+    // Check wrap after element is in DOM
+    const textSpan = taskElement.querySelector('span');
+    const taskDiv = taskElement.querySelector('.task-content');
     checkTextWrap(textSpan, taskDiv);
 }
 
