@@ -37,6 +37,8 @@ function createTasks(task, index) {
             const newText = prompt("Edit Task", task.text);
             if(newText !== null) {
                task.text = newText.trim();
+               textSpan.textContent = task.text;
+               saveTasks();
             }
 
         })
