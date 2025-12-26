@@ -21,7 +21,7 @@ function createTask(task, index) {
         todo.completed = checkbox.checked;
 
         //Strike-Through when completed
-
+        textSpan.style.textDecoration = task.completed ? "line-through" : "";
         saveTasks();
     })
 
