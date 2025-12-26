@@ -65,6 +65,9 @@ function createTask(task, index) {
 
     li.appendChild(taskDiv);
     li.appendChild(delBtn);
+
+    // Check for text wrap after element is added to DOM
+    setTimeout(() => checkTextWrap(textSpan, taskDiv), 0);
     
     return li;
 }
