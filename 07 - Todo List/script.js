@@ -81,27 +81,25 @@ function renderTasks() {
     setTimeout(adjustAllCheckboxes, 0);
 }
 
-// Function to adjust checkbox alignment based on text wrapping
-function adjustCheckboxAlignment() {
+function adjustCheckboxAlignment(todoItem, textSpan) {
+    const lineHeight = parseFloat(getComputedStyle(textSpan).lineHeight);
+    const textHeight = textSpan.offsetHeight;
+    
+    if (textHeight > lineHeight * 1.5) {
+        todoItem.style.alignItems = "flex-start";
+        todoItem.querySelector('input[type="checkbox"]').style.marginTop = "2px";
+    } else {
+        todoItem.style.alignItems = "center";
+        todoItem.querySelector('input[type="checkbox"]').style.marginTop = "0";
+    }
+}
+
+function adjustAllCheckboxes() {
     const todoItems = document.querySelectorAll('.todo-item');
     
     todoItems.forEach(item => {
-        const label = item.querySelector('.task-content span');
-
-        // Function to check if the text has wrapped
-        function checkTextWrap() {
-            if (label.scrollHeight > label.clientHeight) {
-                // If text is wrapped, align checkbox to the top of text
-                item.style.alignItems = "flex-start";
-            } else {
-                // If text is a single line, align checkbox to center vertically
-                item.style.alignItems = "baseline";
-            }
-        }
-
-        // Run check initially and when window is resized
-        checkTextWrap();
-        window.addEventListener('resize', checkTextWrap);
+        const textSpan = item.querySelector('.task-content span');
+        adjustCheckboxAlignment(item, textSpan);
     });
 }
 
@@ -124,6 +122,8 @@ taskInput.addEventListener('keydown', (e) => {
        addTask();
     }
 })
+
+window.addEventListener('resize', adjustAllCheckboxes);
 
 // Initial render of tasks
 renderTasks();
