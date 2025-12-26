@@ -10,24 +10,6 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
- function checkTextWrap(textSpan, taskDiv) {
-    // Use requestAnimationFrame to ensure layout is complete
-    requestAnimationFrame(() => {
-        const computedStyle = window.getComputedStyle(textSpan);
-        const lineHeight = parseFloat(computedStyle.lineHeight);
-        const height = textSpan.offsetHeight;
-        
-        // Calculate number of lines (with small tolerance for rounding)
-        const lines = Math.round(height / lineHeight);
-        
-        if (lines > 1) {
-            taskDiv.classList.add('wrapped');
-        } else {
-            taskDiv.classList.remove('wrapped');
-        }
-    });
-}
-
 function createTask(task, index) {
     const li = document.createElement('li');
     li.style.listStyle = "none";
@@ -64,10 +46,8 @@ function createTask(task, index) {
             task.text = newText.trim();
             textSpan.textContent = task.text;
             saveTasks();
-            
-            // Re-check wrap after editing
-            checkTextWrap(textSpan, taskDiv);
         }
+
     })
 
     taskDiv.appendChild(checkbox);
@@ -96,11 +76,6 @@ function renderTasks() {
         const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
     });
-    
-    // Check wrap after element is in DOM
-    const textSpan = taskElement.querySelector('span');
-    const taskDiv = taskElement.querySelector('.task-content');
-    checkTextWrap(textSpan, taskDiv);
 }
 
 function addTask() {
@@ -122,6 +97,4 @@ taskInput.addEventListener('keydown', (e) => {
        addTask();
     }
 })
-
-//Initial render of tasks
 renderTasks();
