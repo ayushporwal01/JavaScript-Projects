@@ -14,7 +14,7 @@ function createTask(task, index) {
     const li = document.createElement('li');
 
     //checkbox to toggle completion
-    const checkbox = docuement.createElement('input');
+    const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = !!task.completed; //convert any value to true or false
     checkbox.addEventListener("change", () => {
@@ -69,14 +69,14 @@ function renderTasks() {
 }
 
 function addTask() {
-    const text = input.value.trim();
+    const text = taskInput.value.trim();
     if(!text) {
        return;
     }
 
     //Push a new task object
     tasks.push({text, completed: false});
-    input.value = '';
+    taskInput.value = '';
     renderTasks();
     saveTasks();
 }
