@@ -59,6 +59,15 @@ function createTask(task, index) {
     }
 }
 
+function renderTasks() {
+    taskList.innerHTML = '';
+
+    tasks.forEach((task, index) => {
+        const taskElement = createTask(task, index);
+        taskList.appendChild(taskElement);
+    });
+}
+
 function addTask() {
     const text = input.value.trim();
     if(!text) {
@@ -74,12 +83,3 @@ function addTask() {
 
 addBtn.addEventListener("click", addTask);
 renderTasks();
-
-function renderTasks() {
-    taskList.innerHTML = '';
-
-    tasks.forEach((task, index) => {
-        const taskElement = createTask(task, index);
-        taskList.appendChild(taskElement);
-    });
-}
