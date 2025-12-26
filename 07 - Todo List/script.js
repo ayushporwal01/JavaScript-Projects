@@ -73,7 +73,7 @@ function addTask() {
 }
 
 addBtn.addEventListener("click", addTask);
-
+renderTasks();
 function renderTasks() {
     taskList.innerHTML = '';
 
