@@ -74,11 +74,12 @@ function addTask() {
 
 addBtn.addEventListener("click", addTask);
 renderTasks();
+
 function renderTasks() {
     taskList.innerHTML = '';
 
     tasks.forEach((task, index) => {
-        const taskElement = createTasks(task, index);
+        const taskElement = createTask(task, index);
         taskList.appendChild(taskElement);
     });
 }
