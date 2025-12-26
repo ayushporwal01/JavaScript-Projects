@@ -10,6 +10,18 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
+ function checkTextWrapping(taskDiv, textSpan) {
+    // Check if text spans multiple lines
+    const lineHeight = parseInt(window.getComputedStyle(textSpan).lineHeight);
+    const height = textSpan.offsetHeight;
+    
+    if (height > lineHeight) {
+        taskDiv.classList.add('wrapped');
+    } else {
+        taskDiv.classList.remove('wrapped');
+    }
+}
+
 function createTask(task, index) {
     const li = document.createElement('li');
     li.style.listStyle = "none";
@@ -52,6 +64,10 @@ function createTask(task, index) {
 
     taskDiv.appendChild(checkbox);
     taskDiv.appendChild(textSpan);
+
+    // Check if text wraps after elements are in DOM
+    setTimeout(() => checkTextWrapping(taskDiv, textSpan), 0);
+}
 
     //Delete Task Button
     const delBtn = document.createElement('button');
