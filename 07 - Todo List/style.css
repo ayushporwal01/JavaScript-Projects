@@ -34,7 +34,7 @@ p {
 
 #task-input {
     width: 180px;
-    height: 33px;
+    height: 35px;
     padding-left: 8px;
     border-radius: 5px;
     border: 1px solid black;
@@ -58,7 +58,7 @@ p {
 }
 
 .todo-item {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(230, 230, 230);
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
