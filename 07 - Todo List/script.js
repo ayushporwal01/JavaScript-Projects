@@ -61,7 +61,7 @@ function createTask(task, index) {
             saveTasks();
             
             // Re-check wrap after editing
-            setTimeout(() => checkTextWrap(textSpan, taskDiv), 0);
+            checkTextWrap(textSpan, taskDiv);
         }
     })
 
@@ -82,7 +82,7 @@ function createTask(task, index) {
     li.appendChild(delBtn);
 
     // Check for text wrap after element is added to DOM
-    setTimeout(() => checkTextWrap(textSpan, taskDiv), 0);
+    checkTextWrap(textSpan, taskDiv);
     
     return li;
 }
