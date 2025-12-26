@@ -71,6 +71,8 @@ p {
 
 .task-content {
     margin-left: 6px;
+    display: flex;
+    align-items: center;
 }
 
 #delBtn {
