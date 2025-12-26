@@ -51,11 +51,12 @@ p {
 }
 
 #task-list {
-     border: 1px solid black;
-    margin-top: 2.5rem;
     width: 400px;
     height: 400px;
-    overflow-y: auto;
+    border: 1px solid black;
+    margin-top: 2.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .todo-item {
