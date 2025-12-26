@@ -31,6 +31,9 @@ p {
     margin-top: 2.3rem;
 }
 
+input {
+    width: 250px;
+}
 
 #task-list {
     margin-top: 2.5rem;
