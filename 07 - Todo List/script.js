@@ -16,7 +16,7 @@ function createTask(task, index) {
     li.style.listStyle = "none";
     li.classList.add('list-item');
     
-    //wrapper inside li for checkbox and taskSpan
+    //wrapper inside li for checkbox and textSpan
     const taskDiv = document.createElement('div');
     taskDiv.classList.add('task-container');
  
@@ -50,6 +50,9 @@ function createTask(task, index) {
         }
 
     })
+
+    taskDiv.appendChild(checkbox);
+    taskDiv.appendChild(textSpan);
 
     //Delete Task Button
     const delBtn = document.createElement('button');
