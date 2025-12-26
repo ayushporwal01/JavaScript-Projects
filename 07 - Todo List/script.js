@@ -10,6 +10,19 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
+ function checkTextWrap(textSpan, taskDiv) {
+    // Check if text has wrapped to multiple lines
+    const lineHeight = parseInt(window.getComputedStyle(textSpan).lineHeight);
+    const height = textSpan.offsetHeight;
+    const lines = Math.round(height / lineHeight);
+    
+    if (lines > 1) {
+        taskDiv.classList.add('wrapped');
+    } else {
+        taskDiv.classList.remove('wrapped');
+    }
+}
+
 function createTask(task, index) {
     const li = document.createElement('li');
     li.style.listStyle = "none";
