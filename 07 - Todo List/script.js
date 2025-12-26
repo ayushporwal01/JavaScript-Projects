@@ -10,7 +10,7 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
- function checkTextWrap(textSpan, taskDiv) {
+function checkTextWrap(textSpan, taskDiv) {
     // Check if text has wrapped to multiple lines
     const lineHeight = parseInt(window.getComputedStyle(textSpan).lineHeight);
     const height = textSpan.offsetHeight;
