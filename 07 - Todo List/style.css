@@ -82,10 +82,6 @@ p {
     gap: 3px;   
 }
 
-.task-content.wrapped {
-    align-items: flex-start;
-}
-
 .todo-item span {
     white-space: normal;
     max-width: 240px;
