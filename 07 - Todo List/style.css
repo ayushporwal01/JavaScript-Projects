@@ -74,11 +74,6 @@ p {
     height: 20px;
 }
 
-.todo-item span {
-    white-space: normal;
-    max-width: 240px;
-    word-wrap: break-word;
-}
 
 .task-content {
     margin-left: 6px;
@@ -89,6 +84,12 @@ p {
 
 .task-content.wrapped {
     align-items: flex-start;
+}
+
+.todo-item span {
+    white-space: normal;
+    max-width: 240px;
+    word-wrap: break-word;
 }
 
 #delBtn {
