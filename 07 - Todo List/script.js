@@ -33,7 +33,7 @@ function createTasks(task, index) {
         textSpan.style.textDecoration = `line-through`;
 
         //Add double-click event listener
-        document.addEventListener("dblclick", () => {
+        textSpan.addEventListener("dblclick", () => {
             const newText = prompt("Edit Task", task.text);
             if(newText !== null) {
                task.text = newText.trim();
