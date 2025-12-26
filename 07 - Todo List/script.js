@@ -72,6 +72,8 @@ function addTask() {
     saveTasks();
 }
 
+addBtn.addEventListener("click", addTask);
+
 
 function renderTasks() {
     taskList.innerHTML = '';
