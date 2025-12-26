@@ -87,6 +87,10 @@ p {
     gap: 3px;   
 }
 
+.task-content.wrapped {
+    align-items: flex-start;
+}
+
 #delBtn {
     padding: 5px 8px;
     border: 1px solid black;
