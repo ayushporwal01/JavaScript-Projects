@@ -27,12 +27,18 @@ p {
 
 .container {
     display: flex;
-    gap: 1rem;
+    gap: 8px;
     margin-top: 2.3rem;
 }
 
 input {
-    width: 250px;
+    width: 150px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#add-btn {
+    width: 50px;
 }
 
 #task-list {
