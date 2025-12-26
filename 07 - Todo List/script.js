@@ -60,7 +60,10 @@ function createTask(task, index) {
 }
 
 function addTask() {
-
+    const text = input.value.trim();
+    if(!text) {
+       return;
+    }
 }
 
 
