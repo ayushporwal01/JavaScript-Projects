@@ -56,6 +56,7 @@ function createTask(task, index) {
 
     //Delete Task Button
     const delBtn = document.createElement('button');
+    delBtn.id = 'delBtn';
     delBtn.textContent = "Delete";
     delBtn.addEventListener('click', () => {
         tasks.splice(index, 1);

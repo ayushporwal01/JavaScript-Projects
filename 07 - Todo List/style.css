@@ -67,3 +67,6 @@ p {
     justify-content: space-between;
 }
 
+.task-content {
+    margin-left: 6px;
+}
