@@ -66,8 +66,7 @@ function createTask(task, index) {
     li.appendChild(taskDiv);
     li.appendChild(delBtn);
     
-    taskDiv.appendChild(li);
-    return taskDiv;
+    return li;
 }
 
 function renderTasks() {
