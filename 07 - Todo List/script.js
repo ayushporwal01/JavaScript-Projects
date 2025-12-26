@@ -46,8 +46,10 @@ function createTask(task, index) {
             task.text = newText.trim();
             textSpan.textContent = task.text;
             saveTasks();
+            
+            // Re-check wrap after editing
+            setTimeout(() => checkTextWrap(textSpan, taskDiv), 0);
         }
-
     })
 
     taskDiv.appendChild(checkbox);
