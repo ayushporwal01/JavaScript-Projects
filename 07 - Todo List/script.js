@@ -11,7 +11,6 @@ function saveTasks() {
 }
 
 function createTask(task, index) {
-    
     const li = document.createElement('li');
     li.style.listStyle = "none";
     li.classList.add('todo-item');
