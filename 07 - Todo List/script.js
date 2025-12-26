@@ -78,7 +78,7 @@ function renderTasks() {
     });
     
     // After rendering the tasks, adjust the checkbox alignment
-    adjustCheckboxAlignment();
+    setTimeout(adjustAllCheckboxes, 0);
 }
 
 // Function to adjust checkbox alignment based on text wrapping
