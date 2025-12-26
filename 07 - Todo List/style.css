@@ -51,6 +51,7 @@ p {
 }
 
 #task-list {
+    border: 1px solid black;
     margin-top: 2.5rem;
 }
 

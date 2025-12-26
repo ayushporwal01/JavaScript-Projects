@@ -12,6 +12,7 @@ function saveTasks() {
 
 function createTask(task, index) {
     const li = document.createElement('li');
+    li.style.listStyle = "none";
 
     //checkbox to toggle completion
     const checkbox = document.createElement('input');
