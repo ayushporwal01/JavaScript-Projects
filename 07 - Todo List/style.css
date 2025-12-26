@@ -64,7 +64,10 @@ p {
     border-radius: 5px;
     border: 1px solid black;
     display: flex;
-    justify-content: space-between;
+}
+
+.task-container {
+
 }
 
 
