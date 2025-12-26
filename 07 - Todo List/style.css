@@ -51,7 +51,6 @@ p {
 }
 
 #task-list {
-    border: 1px solid black;
     margin-top: 2.5rem;
     width: 400px;
     height: 400px;
@@ -73,7 +72,6 @@ p {
     width: 15px;
     height: 20px;
 }
-
 
 .task-content {
     margin-left: 6px;
