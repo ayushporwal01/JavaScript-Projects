@@ -18,7 +18,7 @@ function createTask(task, index) {
     
     //wrapper inside li for checkbox and textSpan
     const taskDiv = document.createElement('div');
-    taskDiv.classList.add('task-content');
+    taskDiv.classList.add('task-container');
  
     //checkbox to toggle task completion
     const checkbox = document.createElement('input');
