@@ -83,7 +83,6 @@ function adjustCheckboxAlignment() {
     const todoItems = document.querySelectorAll('.todo-item');
     
     todoItems.forEach(item => {
-        const checkbox = item.querySelector('.checkbox');
         const label = item.querySelector('.task-content span');
 
         // Function to check if the text has wrapped
