@@ -31,32 +31,32 @@ function createTask(task, index) {
     textSpan.style.margin = `0 8px`;
     if(task.completed) {
         textSpan.style.textDecoration = `line-through`;
-
-        //Add double-click event listener
-        textSpan.addEventListener("dblclick", () => {
-            const newText = prompt("Edit Task", task.text);
-            if(newText !== null) {
-               task.text = newText.trim();
-               textSpan.textContent = task.text;
-               saveTasks();
-            }
-
-        })
-
-        //Delete Task Button
-        const delBtn = document.createElement('button');
-        delBtn.textContent = "Delete";
-        delBtn.addEventListener('click', () => {
-            tasks.splice(index, 1);
-            renderTasks();
-            saveTasks();
-        })
-
-        li.appendChild(checkbox);
-        li.appendChild(textSpan);
-        li.appendChild(delBtn);
-        return li;
     }
+
+    //Add double-click event listener
+    textSpan.addEventListener("dblclick", () => {
+        const newText = prompt("Edit Task", task.text);
+        if(newText !== null) {
+            task.text = newText.trim();
+            textSpan.textContent = task.text;
+            saveTasks();
+        }
+
+    })
+
+    //Delete Task Button
+    const delBtn = document.createElement('button');
+    delBtn.textContent = "Delete";
+    delBtn.addEventListener('click', () => {
+        tasks.splice(index, 1);
+        renderTasks();
+        saveTasks();
+    })
+
+    li.appendChild(checkbox);
+    li.appendChild(textSpan);
+    li.appendChild(delBtn);
+    return li;
 }
 
 function renderTasks() {
