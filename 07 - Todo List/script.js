@@ -51,6 +51,10 @@ function createTasks(task, index) {
             renderTasks();
             saveTasks();
         })
+
+        li.appendChild(checkbox);
+        li.appendChild(textSpan);
+        li.appendChild(delBtn);
     }
 }
 
