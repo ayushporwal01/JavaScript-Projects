@@ -10,17 +10,22 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-function checkTextWrap(textSpan, taskDiv) {
-    // Check if text has wrapped to multiple lines
-    const lineHeight = parseInt(window.getComputedStyle(textSpan).lineHeight);
-    const height = textSpan.offsetHeight;
-    const lines = Math.round(height / lineHeight);
-    
-    if (lines > 1) {
-        taskDiv.classList.add('wrapped');
-    } else {
-        taskDiv.classList.remove('wrapped');
-    }
+ function checkTextWrap(textSpan, taskDiv) {
+    // Use requestAnimationFrame to ensure layout is complete
+    requestAnimationFrame(() => {
+        const computedStyle = window.getComputedStyle(textSpan);
+        const lineHeight = parseFloat(computedStyle.lineHeight);
+        const height = textSpan.offsetHeight;
+        
+        // Calculate number of lines (with small tolerance for rounding)
+        const lines = Math.round(height / lineHeight);
+        
+        if (lines > 1) {
+            taskDiv.classList.add('wrapped');
+        } else {
+            taskDiv.classList.remove('wrapped');
+        }
+    });
 }
 
 function createTask(task, index) {
