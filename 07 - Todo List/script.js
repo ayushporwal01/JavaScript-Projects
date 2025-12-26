@@ -42,6 +42,15 @@ function createTasks(task, index) {
             }
 
         })
+
+        //Delete Task Button
+        const delBtn = document.createElement('button');
+        delBtn.textContent = "Delete";
+        delBtn.addEventListener('click', () => {
+            tasks.splice(index, 1);
+            renderTasks();
+            saveTasks();
+        })
     }
 }
 
