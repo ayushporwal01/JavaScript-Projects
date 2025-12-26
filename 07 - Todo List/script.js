@@ -97,4 +97,6 @@ taskInput.addEventListener('keydown', (e) => {
        addTask();
     }
 })
+
+//Initial render of tasks
 renderTasks();
