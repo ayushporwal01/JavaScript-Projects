@@ -16,11 +16,11 @@ function createTask(task, index) {
     li.style.listStyle = "none";
     li.classList.add('list-item');
     
-    //wrapper for checkbox and taskSpan
+    //wrapper inside li for checkbox and taskSpan
     const taskDiv = document.createElement('div');
     taskDiv.classList.add('task-container');
  
-    //checkbox to toggle completion
+    //checkbox to toggle task completion
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = !!task.completed; //convert any value to true or false
