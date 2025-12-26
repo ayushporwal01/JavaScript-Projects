@@ -33,7 +33,7 @@ p {
 }
 
 #task-input {
-    width: 180px;
+    width: 200px;
     height: 35px;
     padding-left: 8px;
     border-radius: 5px;
@@ -51,6 +51,7 @@ p {
 }
 
 #task-list {
+     border: 1px solid black;
     margin-top: 2.5rem;
     width: 400px;
     height: 400px;
