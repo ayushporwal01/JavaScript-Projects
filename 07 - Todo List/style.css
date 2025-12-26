@@ -21,15 +21,16 @@ body {
     padding-top: 3rem;
 }
 
+p {
+    margin-top: 10px;
+}
+
 .container {
     display: flex;
     gap: 1rem;
     margin-top: 2.3rem;
 }
 
-p {
-    margin-top: 10px;
-}
 
 #task-list {
     margin-top: 2.5rem;
