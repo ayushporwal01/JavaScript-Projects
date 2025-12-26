@@ -10,7 +10,7 @@ function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-function createTasks(task, index) {
+function createTask(task, index) {
     const li = document.createElement('li');
 
     //checkbox to toggle completion
@@ -57,6 +57,10 @@ function createTasks(task, index) {
         li.appendChild(delBtn);
         return li;
     }
+}
+
+function addTask() {
+
 }
 
 
