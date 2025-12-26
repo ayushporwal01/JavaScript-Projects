@@ -18,7 +18,7 @@ function createTask(task, index) {
     checkbox.type = 'checkbox';
     checkbox.checked = !!task.completed; //convert any value to true or false
     checkbox.addEventListener("change", () => {
-        todo.completed = checkbox.checked;
+        task.completed = checkbox.checked;
 
         //Strike-Through when completed
         textSpan.style.textDecoration = task.completed ? "line-through" : "";
