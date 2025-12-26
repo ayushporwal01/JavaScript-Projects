@@ -47,7 +47,6 @@ function createTask(task, index) {
             textSpan.textContent = task.text;
             saveTasks();
         }
-
     })
 
     taskDiv.appendChild(checkbox);
