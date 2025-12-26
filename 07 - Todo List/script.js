@@ -63,8 +63,7 @@ function createTask(task, index) {
         saveTasks();
     })
 
-    li.appendChild(checkbox);
-    li.appendChild(textSpan);
+    li.appendChild(taskDiv);
     li.appendChild(delBtn);
     
     taskDiv.appendChild(li);
