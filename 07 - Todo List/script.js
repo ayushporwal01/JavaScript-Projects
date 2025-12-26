@@ -11,13 +11,14 @@ function saveTasks() {
 }
 
 function createTask(task, index) {
-    const taskDiv = document.createElement('div');
-    taskDiv.classList.add('task-container');
-
+    
     const li = document.createElement('li');
     li.style.listStyle = "none";
     li.classList.add('list-item');
-
+    
+    const taskDiv = document.createElement('div');
+    taskDiv.classList.add('task-container');
+ 
     //checkbox to toggle completion
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
