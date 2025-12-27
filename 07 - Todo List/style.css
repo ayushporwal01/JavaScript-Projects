@@ -51,9 +51,6 @@ p {
 }
 
 #task-list {
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
     border-radius: 10px;
     margin-top: 2.5rem;
     overflow-y: scroll;
@@ -63,6 +60,7 @@ p {
 .todo-item {
     background-color: rgb(230, 230, 230);
     margin: 10px;
+    width: 400px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
