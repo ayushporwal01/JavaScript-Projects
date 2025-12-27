@@ -60,13 +60,13 @@ p {
 .todo-item {
     width: 400px;
     background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .todo-item input[type="checkbox"] {
