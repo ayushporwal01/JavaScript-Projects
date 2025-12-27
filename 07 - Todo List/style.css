@@ -51,7 +51,6 @@ p {
 }
 
 #task-list {
-    border: 1px solid black;
     border-radius: 10px;
     margin-top: 2.5rem;
     overflow-y: scroll;
