@@ -51,10 +51,10 @@ p {
 }
 
 #task-list {
-    border-radius: 10px;
     margin-top: 2.5rem;
     overflow-y: scroll;
     scrollbar-width: none;
+    border-radius: 10px;
 }
 
 .todo-item {
