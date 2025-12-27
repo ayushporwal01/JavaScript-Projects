@@ -60,7 +60,7 @@ p {
 .todo-item {
     background-color: rgb(230, 230, 230);
     margin: 10px;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
