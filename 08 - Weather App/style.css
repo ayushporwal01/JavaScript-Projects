@@ -80,13 +80,14 @@ body {
 .details {
     border: 1px solid black;
     display: flex;
+    gap: 1rem;
 }
 
 
 .details .col {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
 }
 
 .details img {
