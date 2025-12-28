@@ -23,7 +23,7 @@ searchBox.addEventListener("click", () => {
 })
 
 searchBtn.addEventListener("click", () => {
-    checkWeather(searchBox.value);
+    checkWeather(searchBox.value.trim());
 })
 
 checkWeather();
