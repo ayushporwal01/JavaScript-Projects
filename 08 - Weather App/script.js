@@ -1,4 +1,4 @@
-let searchBar = document.querySelector('#search-bar');
+let searchBox = document.querySelector('#search-bar');
 let searchBtn = document.querySelector('#search-btn');
 let weatherImg = document.querySelector('#weather-img');
 let humidity = document.querySelector('.humidity');
@@ -15,5 +15,15 @@ async function checkWeather(city = 'Indore') {
     document.querySelector('.humidity').innerHTML = data.main.humidity + "+";
     document.querySelector('.humidity').innerHTML = data.wind.speed + "km/h";
 }
+
+searchBox.addEventListener("click", () => {
+    if(e.key == "Enter") {
+        checkWeather(searchBox.value.trim());
+    }
+})
+
+searchBtn.addEventListener("click", () => {
+    checkWeather(searchBox.value);
+})
 
 checkWeather();
