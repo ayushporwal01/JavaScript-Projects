@@ -35,6 +35,11 @@ body {
    border-radius: 20px;
 }
 
+.search button {
+    width: 35px;
+    height: 35px;
+}
+
 .weather {
     display: flex;
     flex-direction: column;
