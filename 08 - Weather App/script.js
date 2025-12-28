@@ -12,6 +12,8 @@ async function checkWeather(city = 'Indore') {
     let data = await res.json();
     document.querySelector('.city').innerHTML = data.name;
     document.querySelector('.temp').innerHTML = Math.floor(data.main.temp) + "°C";
+    document.querySelector('.humidity').innerHTML = data.main.humidity + "+";
+    document.querySelector('.humidity').innerHTML = data.wind.speed + "km/h";
 }
 
 checkWeather();
