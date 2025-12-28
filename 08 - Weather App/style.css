@@ -57,13 +57,14 @@ body {
     margin-top: 2rem;
 }
 
+#weather-img {
+    width: 120px;
+}
 
 
 .details {
     display: flex;
 }
 
-img {
-    width: 100px;
-}
+
 
