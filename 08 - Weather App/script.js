@@ -5,3 +5,4 @@ let temp = document.querySelector('.temp');
 let city = document.querySelector('.city');
 let humidity = document.querySelector('.humidity');
 let wind = document.querySelector('.wind');
+
