@@ -82,9 +82,15 @@ body {
     display: flex;
 }
 
-.details img {
-    width: 100px;
+
+.details .col {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
+.details img {
+    width: 50px;
+}
 
 
