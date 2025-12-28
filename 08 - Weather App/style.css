@@ -17,7 +17,7 @@ body {
 
 .container {
     border: 1px solid black;
-    height: 450px;
+    height: 400px;
     width: 350px;
     border-radius: 10px;
     display: flex;
@@ -78,9 +78,9 @@ body {
 }
 
 .details {
-    border: 1px solid black;
     display: flex;
     gap: 1rem;
+    margin-top: 2.5rem;
 }
 
 
