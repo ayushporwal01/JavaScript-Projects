@@ -78,7 +78,12 @@ body {
 }
 
 .details {
+    border: 1px solid black;
     display: flex;
+}
+
+.details img {
+    width: 100px;
 }
 
 
