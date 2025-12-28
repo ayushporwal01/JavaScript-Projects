@@ -65,6 +65,15 @@ body {
     font-weight: 500;
 }
 
+.temp {
+    font-size: 2.3rem;
+}
+
+.city {
+    font-size: 1.3rem;
+    margin-top: -0.8rem;
+}
+
 
 .details {
     display: flex;
