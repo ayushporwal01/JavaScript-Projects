@@ -54,11 +54,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 #weather-img {
     width: 120px;
+}
+
+.temp, .city {
+    font-weight: 500;
 }
 
 
