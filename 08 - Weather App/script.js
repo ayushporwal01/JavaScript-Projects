@@ -8,3 +8,7 @@ let wind = document.querySelector('.wind');
 
 const APIKEY = "5946f5b03d140b69d87678908bea2ee0";
 const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`; 
+
+async function checkWeather(city = 'Indore') {
+    
+}
